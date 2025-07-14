@@ -1,0 +1,20 @@
+.about-section {
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
+
+.about-img {
+  border-radius: 10px;
+  box-shadow: 0 0 30px #333;
+}
+
+.about-text h3 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #f5c518;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #ddd;
+}
