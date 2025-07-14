@@ -7,10 +7,14 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg sticky-top">
             <div className="container">
                 <Link className="navbar-brand" to="/">
-                    Palapas <img src={process.env.PUBLIC_URL + '/logo.jpg'} id='navbar-logo' alt='logo'/>
+                    Palapas <img src={process.env.PUBLIC_URL + '/logo.jpg'} id='navbar-logo' alt='logo' />
                 </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span className="navbar-toggler-icon"></span>
+                </button> */}
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i className="bi bi-list" style={{ fontSize: '1.8rem', color: '#f5c518' }}></i>
                 </button>
 
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
