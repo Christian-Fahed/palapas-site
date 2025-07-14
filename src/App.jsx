@@ -6,10 +6,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CollectionPage from './pages/CollectionPage';
+import ScrollToHashElement from './components/ScrollToHashElement';
 
 function Home() {
   return (
     <>
+      <ScrollToHashElement />
       <About />
       <Collection />
       <Contact />
