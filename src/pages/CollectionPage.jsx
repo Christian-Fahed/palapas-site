@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import collectionData from "../data/collectionData";
 
 function CollectionPage() {
     const { type } = useParams();
+    const navigate = useNavigate();
     const data = collectionData[type];
     const sectionRef = useRef(null);
 
@@ -24,6 +25,13 @@ function CollectionPage() {
     return (
         <section ref={sectionRef} className="py-5" style={{ backgroundColor: '#121212', color: '#fff' }}>
             <div className="container">
+                {/* Back to Home Button  */}
+                <div className="mb-4">
+                    <button className="btn-gold" onClick={() => navigate('/')}>
+                        Back to Home
+                    </button>
+                </div>
+
                 <h2 className="section-title text-white mb-4">{data.title}</h2>
 
                 {/* Features section */}
