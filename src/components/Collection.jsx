@@ -5,7 +5,7 @@ import collectionData from "../data/collectionData";
 
 export default function Collection() {
     return (
-        <section className="py-5" style={{ backgroundColor: '#121212' }} id="collection">
+        <section className="py-5" style={{ backgroundColor: '#f1f2f6' }}  id="collection">
             <div className="container">
                 <h2 className="section-title">Our Collection</h2>
                 <div className="row g-3 gallery">

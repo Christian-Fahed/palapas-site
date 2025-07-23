@@ -1,3 +1,4 @@
+/* Clean Hero Section */
 .hero {
   position: relative;
   background: url('/public/images/building/beach-night.jpeg') center center/cover no-repeat;
@@ -12,41 +13,59 @@
 .hero::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
+  top: 0; 
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
 .hero .content {
   position: relative;
   z-index: 2;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.5px;
+  line-height: 1.6;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: 'Playfair Display', serif;
-  text-shadow: 2px 2px 8px #000;
-  color: #f5c518;
+  font-weight: 700;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  color: #ffffff;
   animation: beachWave 2.5s ease-out forwards;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
 }
 
-/* Optional: Add a glowing text effect */
+/* Wave emoji animation */
 .hero h1::after {
   content: '🌊';
-  margin-left: 10px;
+  margin-left: 15px;
+  font-size: 3rem;
+  display: inline-block;
   animation: floatWave 3s infinite ease-in-out;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
 }
 
 @keyframes floatWave {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg);
+  }
+  50% { 
+    transform: translateY(-8px) rotate(5deg);
+  }
 }
 
 @keyframes beachWave {
@@ -54,15 +73,60 @@
     transform: translateY(100px) scale(0.8);
     opacity: 0;
     letter-spacing: 0.2em;
-    color: #f5c518;
   }
   50% {
     transform: translateY(-20px) scale(1.05);
-    opacity: 1;
-    color: #ffd700;
+    opacity: 0.9;
   }
   100% {
     transform: translateY(0) scale(1);
-    color: #fffacd;
+    opacity: 1;
+    letter-spacing: 1px;
+  }
+}
+
+/* Hero Responsive Design */
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+  
+  .hero h1 {
+    font-size: 3.2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .hero h1::after {
+    font-size: 2.5rem;
+    margin-left: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero h1::after {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
   }
 }

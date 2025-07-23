@@ -23,7 +23,7 @@ function CollectionPage() {
     }
 
     return (
-        <section ref={sectionRef} className="py-5" style={{ backgroundColor: '#121212', color: '#fff' }}>
+        <section ref={sectionRef} className="py-5" style={{ backgroundColor: '#f1f2f6' }} >
             <div className="container">
                 {/* Back to Home Button  */}
                 <div className="mb-4">
@@ -32,12 +32,14 @@ function CollectionPage() {
                     </button>
                 </div>
 
-                <h2 className="section-title text-white mb-4">{data.title}</h2>
+                <h2 className="section-title  mb-4">{data.title}</h2>
 
                 {/* Features section */}
                 {data.features && (
                     <div className="mb-5">
-                        <h4 className="text-white mb-3">Features</h4>
+                        <h4 className="">
+                            <u>Features</u>
+                        </h4>
                         <ul className="list-unstyled row">
                             {data.features.map((feature, index) => (
                                 <li key={index} className="col-md-4 mb-2 d-flex align-items-center">

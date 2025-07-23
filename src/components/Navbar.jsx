@@ -14,9 +14,8 @@ export default function Navbar() {
                 </button> */}
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <i className="bi bi-list" style={{ fontSize: '1.8rem', color: '#f5c518' }}></i>
+                    <i className="bi bi-list" style={{ fontSize: '1.8rem', color: '#ADD8E6' }}></i>
                 </button>
-
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav me-3">
                         <li className="nav-item">

@@ -1,5 +1,6 @@
+/* Contact Section */
 .contact-section {
-  background-color: #121212;
+  background-color: #f1f2f6;
 }
 
 /* Contact Methods Section */
@@ -10,9 +11,9 @@
 .contact-intro h3 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
-  color: #f5c518;
+  color: #2980b9;
   margin-bottom: 3rem;
-  text-shadow: 0 4px 20px rgba(245, 197, 24, 0.3);
+  text-shadow: 0 2px 10px rgba(41, 128, 185, 0.2);
   position: relative;
   display: inline-block;
 }
@@ -25,7 +26,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #f5c518, transparent);
+  background: linear-gradient(90deg, transparent, #2980b9, transparent);
   border-radius: 2px;
 }
 
@@ -40,21 +41,21 @@
 
 .contact-method {
   background: linear-gradient(135deg, 
-    rgba(30, 30, 30, 0.9) 0%, 
-    rgba(20, 20, 20, 0.95) 100%);
+    rgba(255, 255, 255, 0.95) 0%, 
+    rgba(248, 249, 250, 0.98) 100%);
   border-radius: 20px;
   padding: 2rem 1.5rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(245, 197, 24, 0.2);
+  border: 1px solid rgba(41, 128, 185, 0.15);
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
   box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.5),
-    0 0 20px rgba(245, 197, 24, 0.05);
+    0 8px 25px rgba(0, 0, 0, 0.08),
+    0 0 15px rgba(41, 128, 185, 0.05);
 }
 
 .contact-method::before {
@@ -66,7 +67,7 @@
   height: 100%;
   background: linear-gradient(90deg, 
     transparent, 
-    rgba(245, 197, 24, 0.1), 
+    rgba(41, 128, 185, 0.08), 
     transparent);
   transition: left 0.6s ease;
 }
@@ -77,26 +78,26 @@
 
 .contact-method:hover {
   transform: translateY(-8px);
-  border-color: rgba(245, 197, 24, 0.6);
+  border-color: rgba(41, 128, 185, 0.3);
   box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.7),
-    0 0 30px rgba(245, 197, 24, 0.2);
+    0 15px 35px rgba(0, 0, 0, 0.12),
+    0 0 25px rgba(41, 128, 185, 0.15);
 }
 
 .contact-icon {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, #f5c518 0%, #ffd700 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  color: #1e1e1e;
+  color: #ffffff;
   flex-shrink: 0;
   transition: all 0.4s ease;
   box-shadow: 
-    0 8px 20px rgba(245, 197, 24, 0.3),
+    0 6px 15px rgba(41, 128, 185, 0.25),
     inset 0 2px 4px rgba(255, 255, 255, 0.2);
   position: relative;
 }
@@ -104,7 +105,7 @@
 .contact-method:hover .contact-icon {
   transform: scale(1.1) rotate(5deg);
   box-shadow: 
-    0 12px 30px rgba(245, 197, 24, 0.5),
+    0 10px 25px rgba(41, 128, 185, 0.35),
     inset 0 2px 4px rgba(255, 255, 255, 0.3);
 }
 
@@ -134,14 +135,14 @@
 .contact-info h4 {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
-  color: #f5c518;
+  color: #2980b9;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  text-shadow: 0 2px 10px rgba(245, 197, 24, 0.3);
+  text-shadow: 0 1px 5px rgba(41, 128, 185, 0.2);
 }
 
 .contact-info a {
-  color: #e0e0e0;
+  color: #5d6d7e;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -157,12 +158,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #f5c518, transparent);
+  background: linear-gradient(90deg, #2980b9, transparent);
   transition: width 0.3s ease;
 }
 
 .contact-info a:hover {
-  color: #f5c518;
+  color: #2980b9;
   transform: translateX(5px);
 }
 
@@ -201,9 +202,7 @@
   color: #fff;
 }
 
-
-
-/* Responsive Design */
+/* Contact Responsive Design */
 @media (max-width: 768px) {
   .contact-intro h3 {
     font-size: 2rem;
@@ -231,10 +230,6 @@
   
   .contact-info a {
     font-size: 1rem;
-  }
-  
-  .form-title {
-    font-size: 1.8rem;
   }
 }
 
@@ -268,13 +263,9 @@
   .contact-info a {
     font-size: 0.9rem;
   }
-  
-  .form-title {
-    font-size: 1.6rem;
-  }
 }
 
-/* Animation on scroll */
+/* Contact Animation on scroll */
 .contact-method {
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
@@ -288,14 +279,7 @@
 .contact-method:nth-child(5) { animation-delay: 0.5s; }
 .contact-method:nth-child(6) { animation-delay: 0.6s; }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Accessibility improvements */
+/* Contact Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
   .contact-method,
   .contact-icon,
@@ -305,18 +289,18 @@
   }
 }
 
-/* High contrast mode */
+/* Contact High contrast mode */
 @media (prefers-contrast: high) {
   .contact-method {
-    border: 2px solid #f5c518;
-    background: #000;
+    border: 2px solid #2980b9;
+    background: #fff;
   }
   
   .contact-info a {
-    color: #fff;
+    color: #2c3e50;
   }
   
   .contact-info a:hover {
-    color: #f5c518;
+    color: #2980b9;
   }
 }

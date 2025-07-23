@@ -1,9 +1,9 @@
 /* Navbar Container */
 .navbar {
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   padding: 0.8rem 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid rgba(245, 197, 24, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(41, 128, 185, 0.1);
   transition: background-color 0.3s ease;
   z-index: 1000;
 }
@@ -12,9 +12,9 @@
 .navbar-brand {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #f5c518 !important;
+  color: #2980b9 !important;
   letter-spacing: 1px;
-  text-shadow: 0 0 6px rgba(245, 197, 24, 0.2), 1px 1px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 4px rgba(41, 128, 185, 0.15), 1px 1px 2px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -29,7 +29,7 @@
 
 /* Navbar Links */
 .nav-link {
-  color: #f8f9fa !important;
+  color: #2c3e50 !important;
   font-weight: 500;
   margin: 0 0.75rem;
   position: relative;
@@ -43,12 +43,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #f5c518;
+  background: #2980b9;
   transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #f5c518 !important;
+  color: #2980b9 !important;
 }
 
 .nav-link:hover::after {
@@ -60,13 +60,13 @@
   border: none;
   outline: none;
   background: transparent;
-  color: #f5c518 !important;
+  color: #2980b9 !important;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 .navbar-toggler:hover {
-  color: #ffd700 !important;
+  color: #3498db !important;
 }
 
 /* Phone Link */
@@ -75,12 +75,12 @@
   font-size: 1rem;
   display: flex;
   align-items: center;
-  color: #f5c518;
+  color: #2980b9;
   gap: 0.5rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .phone-link:hover {
-  color: #ffd700;
+  color: #3498db;
   transform: scale(1.05);
 }
