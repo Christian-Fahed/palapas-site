@@ -114,12 +114,10 @@ function CollectionPage() {
                 )}
 
                 {/* Collection section */}
-                <div className="row g-3 gallery">
+                <div className="gallery">
                     {data.images && data.images.map((src, index) => (
-                        <div className="col-sm-6 col-md-3" key={index}>
-                            <div className="card">
-                                <img src={process.env.PUBLIC_URL + src} alt={data.title + index} className="img-fluid" />
-                            </div>
+                        <div className="card" key={index}>
+                            <img src={process.env.PUBLIC_URL + src} alt={`${data.title} ${index + 1}`} className="img-fluid" />
                         </div>
                     ))}
                 </div>
